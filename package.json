@@ -1,0 +1,37 @@
+{
+    "name": "monokai-facet-theme",
+    "publisher": "JulieMarin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JulieMarin/monokai-facet"
+    },
+    "homepage": "https://github.com/JulieMarin/monokai-facet",
+    "displayName": "Monokai Facet",
+    "description": "A personal Monokai scheme with extended highlighting for Ruby and Rails.",
+    "icon": "images/icon.png",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Monokai Facet",
+                "uiTheme": "vs-dark",
+                "path": "./themes/monokai-facet.json"
+            }
+        ],
+        "grammars": [
+            {
+                "scopeName": "extended.ruby",
+                "path": "./syntaxes/ruby.cson.json",
+                "injectTo": [
+                    "source.ruby"
+                ]
+            }
+        ]
+    }
+}
