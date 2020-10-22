@@ -4,7 +4,7 @@
 //   #414339 (selection)
 //   #75715e (focus)
 //   #f8f8f2 (editor foreground)
-{	
+{
 	"name": "Monokai Facet",
 	"type": "dark",
 	"colors": {
@@ -477,7 +477,7 @@
 							"fontStyle": "",
 							"foreground": "#A6E22E"
 					}
-			},				
+			},
 			{
 					"name": "Function argument",
 					"scope": "variable.parameter",
@@ -699,6 +699,13 @@
 					}
 			},
 			{
+					"name": "Coffescript Function Name",
+					"scope": "entity.name.function.coffee",
+					"settings": {
+							"foreground": "#A6E22E"
+					}
+			},
+			{
 					"scope": "token.info-token",
 					"settings": {
 							"foreground": "#6796e6"
@@ -730,17 +737,31 @@
 					"settings": {
 						"foreground": "#FD971F"
 					}
-			},	
+			},
+			{
+					"scope": [
+						"variable.other.readwrite.instance.ruby"
+					],
+					"settings": {
+						"foreground": "#FD971F"
+					}
+			},
 			{
 					"name": "Variable - Constant",
 					"scope": "variable.other.constant",
 					"settings": {
 						"foreground": "#66D9EF"
 					}
-			},							
+			},
 			{
 					"name": "this.self",
 					"scope": "variable.language",
+					"settings": {
+							"foreground": "#FD971F"
+					}
+			},
+			{
+					"scope": "variable.other.object.coffee, variable.other.object.property.coffee",
 					"settings": {
 							"foreground": "#FD971F"
 					}
@@ -751,7 +772,19 @@
 				"settings": {
 						"foreground": "#FD971F"
 				}
-			}			
+			},
+			{
+				"scope": "variable.other.block",
+				"settings": {
+						"foreground": "#FD971F"
+				}
+			},
+			{
+				"scope": "punctuation.separator.variable",
+				"settings": {
+						"foreground": "#FD971F"
+				}
+			}
 	],
 	"semanticHighlighting": true
 }
